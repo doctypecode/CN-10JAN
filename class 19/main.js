@@ -1,4 +1,4 @@
-// // Data Types -> Primitive & Non Prmitive
+// // Data Types -> Primitive & Non Primitive
 
 // // Primitive
 // // String - Sequence of chars, Immutable
@@ -67,7 +67,7 @@
 // // Non Primitive
 // // Object
 // // {key:value}
-// // [1,2,3,4]
+// // [1,2,3,'4']
 
 // // FE
 // const payload = { user: "information" };
@@ -90,6 +90,6 @@
 // Manual (Casting)
 
 const coercion = 123 + "234";
-const casting = true + 123;
+const casting = +"123";
 //124
 console.log(casting.toString().charCodeAt(0));
