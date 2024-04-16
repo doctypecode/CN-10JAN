@@ -3,27 +3,26 @@
 // Array.length
 
 // Push - Adding Element to the end of the array
-const numbers = [1,2,3];
-// const numbers1 = Array.from(numbers); 
-const numbersLength = numbers.length
-numbers.push(5);
+const numbers = [1, 2, 3];
+// const numbers1 = Array.from(numbers);
+const numbersLength = numbers.length;
+numbers.push(5); // [1,2,3,5]
 numbers.push(2); // [1,2]
 numbers.push(8); // [1,2]
-numbers.push(7)
+numbers.push(7);
 
 // Pop - Remove the element from the end of the array
 const lastValue = numbers.pop(); //  Removed 6
 // console.log(lastValue)
 
 // Sort
-numbers.sort((a,b) => {
-    // console.log(a, b, b - a )
-    return b - a
+numbers.sort((a, b) => {
+  // console.log(a, b, b - a )
+  return b - a;
 });
 
 // Reverse
-numbers.reverse();
-
+numbers.reverse(); // [1,2,3] => 3,2,1
 
 // Copy & Cut - ctrl + c & Ctrl + X
 // Cut -> Remove & Copy to Clipboard
@@ -42,7 +41,6 @@ numbers.reverse();
 
 // "This is an example"
 
-
 // forEach - Iterate over each element & doesn't return anything
 
 // const double = [];
@@ -60,7 +58,7 @@ numbers.reverse();
 // let sum = 0;
 
 // numbers.forEach((n, index, arr) => {
-//     sum = sum + n; // 
+//     sum = sum + n; //
 // })
 
 // console.log(sum)
@@ -73,8 +71,7 @@ numbers.reverse();
 //     // return undefined
 // }
 
-
-// map - Iterate over each element & returns a new array 
+// map - Iterate over each element & returns a new array
 // const mapReturn = numbers.map((n, index, arr) => {
 //    return n*2;
 // })
@@ -87,9 +84,7 @@ numbers.reverse();
 
 // [1,2,2,3,5,8]----------------- [2,4,4,6,10,16] => new Array will be returned
 
-
 // console.log(mapReturn)
-
 
 //filter
 
@@ -107,11 +102,9 @@ numbers.reverse();
 
 // console.log(findReturn)
 
-
 // forEach, map, filter, find => .func(callbackFunction)
 
-
-// find, 
+// find,
 
 // reduce
 // const reduceReturn = numbers.reduce((prevValue, currentValue) => {
@@ -119,9 +112,6 @@ numbers.reverse();
 // }, 0)
 
 // console.log(reduceReturn)
-
-
-
 
 // Unshift - Add to the starting of the array
 // numbers.unshift(0);
@@ -132,15 +122,23 @@ numbers.reverse();
 
 // indexOf
 
+// console.log(numbers)
+// console.log(numbers.indexOf(8))
 
-console.log(numbers)
-console.log(numbers.indexOf(8))
+// // concat
+// const num2 = ["Coding", 'Ninjas', 'Coding', "Platform"];
+// const added = numbers.concat(num2);
+// // num2.push(12345)
+// console.log(added)
 
-// concat
-const num2 = ["Coding", 'Ninjas', 'Coding', "Platform"];
-const added = numbers.concat(num2);
-// num2.push(12345)
-console.log(added)
+// console.log(num2.join("::"))
 
-console.log(num2.join("::"))
+// const double = [];
+// console.log(
+//   [1, 2, 3, 4].find((num) => {
+//     return num % 1 === 0;
+//     // return undefined
+//   })
+// );
 
+// console.log(double);
