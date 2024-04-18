@@ -19,9 +19,11 @@
 // [] -> Spread -> single values - 2015
 // single values -> Rest -> [] - 2015
 
-// function maxFunction(...numbers) {
-//   console.log(numbers); [20,30,40,10,50]
-// }
+function maxFunction(...numbers) {
+  console.log(arguments);
+  console.log(numbers);
+  [20, 30, 40, 10, 50];
+}
 
 // const max = Math.min(20, 30, 40, 10, 50);
 // console.log(maxFunction(20, 30, 40, 10, 50));
