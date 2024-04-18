@@ -13,8 +13,42 @@ const education = {
   study: "B.Tech (CS)",
   lastUpdatedOn: new Date(),
 };
+
+// const a =10;
+// const b = a;
+// a= 10, b=10
+
+// a -> mem location = 200
+// b -> mem location = 200
+// const input = 3;
+// solve(input)
+
+// function solve(num){
+// 	let copy = num;
+// 	line 1 -
+// 	line 2 - you make changes to copy
+// 	line 3 - you need to refer the input (num)
+
+// }
+
+// function solve2(num){
+
+// }
+
+// const a = {
+
+// }
+
+// const b = a
+
 // basicInfo -> mem location => 100
 // basicInfo1 -> mem location => 100
+
+// 1) Simple - { key, :value}
+// 2) Complex - {
+// 	key: {
+// 	}
+// }
 
 // 1) Spread Operator - Partial Deep Copy
 // const basicInfo1 = {

@@ -9,6 +9,7 @@
 // };
 
 // const obj2 = { ...obj1, ...obj };
+// obj2 = {a : 1, b:1 }
 
 // console.log(arr2, obj2);
 
@@ -19,7 +20,7 @@
 // single values -> Rest -> [] - 2015
 
 // function maxFunction(...numbers) {
-//   console.log(numbers);
+//   console.log(numbers); [20,30,40,10,50]
 // }
 
 // const max = Math.min(20, 30, 40, 10, 50);
@@ -30,15 +31,15 @@
 //
 // const obj2 = Object.create({});
 
-// const basicInfo = {
-//   name: "Kapil",
-//   city: "Agra",
-// };
+const basicInfo = {
+  name: "Kapil",
+  city: "Agra",
+};
 
-// const education = {
-//   graduationYear: 2016,
-//   study: "B.Tech (CS)",
-// };
+const education = {
+  graduationYear: 2016,
+  study: "B.Tech (CS)",
+};
 
 // const info = {
 //   ...basicInfo,
@@ -54,6 +55,9 @@
 //   [];
 // }
 
-// const info = Object.assign({}); // 1 Argument
+// const info = Object.assign({ age: null }, basicInfo, education); // 1 Argument
+const info = Object.assign({
+  location: "Agra",
+});
 
-// console.log(info);
+console.log(info);
