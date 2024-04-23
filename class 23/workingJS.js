@@ -62,8 +62,8 @@ console.log(ans);
 // }
 
 // =============Execution Phase==========
-// num1 = 10;
-// num2 = 20;
-// result = 200;
+  // num1 = 10;
+  // num2 = 20;
+  // result = 200;
 // ans = 200
 // log the value 200
