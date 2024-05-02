@@ -16,6 +16,8 @@ function handleAddTodoSubmit(event){
 
     const todosWrapperElement = document.getElementById('todosWrapper')
     const li = document.createElement('li');
+    li.style.color = 'red'
+    li.classList.add('test-class-dynamic')
     li.innerText = title;
     todosWrapperElement.appendChild(li)
 
@@ -39,3 +41,25 @@ function renderTodos(){
 renderTodos();
 
 
+// DOM Selection
+document.getElementById('idOFDiv')
+document.getElementsByTagName('span')
+document.getElementsByClassName('todoFormWrapper')
+
+// Node
+document.querySelector('#idOFDiv')
+document.querySelector('span')
+document.querySelector('.todoFormWrapper')
+document.querySelector('input[type="button"]')
+
+
+// List of Nodes
+document.querySelectorAll('#idOFDiv') 
+document.querySelectorAll('span')
+document.querySelectorAll('.todoFormWrapper')
+
+
+// APIs
+
+
+// DOM Manipulation - 

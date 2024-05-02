@@ -59,3 +59,115 @@
 // Web API - document, setTimeout, setInterval, fetch, alert, prompt, console
 
 // que
+// Math.random()
+
+// console.log(Math.floor(3.9))
+// console.log(Math.ceil(3.1))
+// console.log(Math.round(3.4))
+// console.log(Math.round(Math.random() * (max - min) + min)) // 0 - 1
+// console.log(Math.floor(Math.random() * (4 - 0) + 0)) // 0 - 1
+// console.log(Math.floor(Math.random() * (3 - 0) + 0)) // 0 - 1
+// 0 - 4
+// 0 - 3
+// 0 - 2
+// 0 - 1
+// 1
+// 2
+
+// [1,2,3,4]
+
+// [    3]
+
+// [ 4, 3, 2, 1] 
+// [3,4,2,1]
+// [0,1,2,3] - Index
+
+// arr = [
+//     "Question1",
+//     "Question2",
+//     "Question3",
+//     "Question4",
+//     "Question5"
+//   ];
+
+// result = [
+//     "Question1", //0
+//     "Question2", // 1
+//     "Question3", // 2
+//     "Question4", //3
+//     "Question5" //4
+//   ];
+
+//   i = 4
+//   const index = Math.floor(Math.random() * i); // 2
+
+
+// const temp = result[i];
+// result[i] = result[index];
+// result[index] = temp;
+
+// result = [
+//     "Question1", //0
+//     "Question2", // 1
+//     "Question5", // 2
+//     "Question4", //3
+// // Till this index value
+
+//     "Question3" //4
+//   ];
+
+
+
+// const customMap = function(arr, callbackFn){
+//     const newArray = [];
+//     for(let i = 0; i<arr.length;i++){
+//         newArray.push(callbackFn(arr[i]))
+//     }
+//     return newArray;
+// }
+
+
+// console.log(customMap([1,2,3,4,5], (num) => {
+//     return num**num
+// }))
+
+// console.log([1,2,3,4,5].map((num, index, arr) => {
+    
+// }))
+
+
+//create you curried function here with name pizzaPricing.
+// const pizzaSizeChart = {
+//     small: 8.00,
+//     medium: 10.00,
+//     large: 12.00,
+// }
+
+
+// function pizzaPricing(pizzaSize){
+//     const basePrice = pizzaSizeChart[pizzaSize];
+//     return function(toppings){
+//         const cost = toppings.length * 1.50 // 1.50 * 2
+//         return (basePrice + cost).toFixed(2);
+//     }
+// }
+
+// const pizza = pizzaPricing("large")
+// console.log(pizza(['bacon','chees']))
+
+
+// function pizzaPricing(size) { const basePrice = { small: 8.0, medium: 10.0, large: 12.0, }; return function (selectedToppings) { return function (quantity) { const toppingsCost = selectedToppings.length * 1.5; const totalPrice = basePrice[size] + toppingsCost; return (totalPrice * quantity).toFixed(2); }; }; }
+
+
+
+
+// client -> server -> new page (client)
+
+
+// document.getElementById().addEventListener('click', (event) => {
+    // event.preventDefault() // stop the default behavior
+    // Form Validation
+
+// })
+
+// Quiz App, __proto vs prototypes, previous lecture question
