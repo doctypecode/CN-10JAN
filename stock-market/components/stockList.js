@@ -1,4 +1,5 @@
 import { stockListAPI } from "../const.js";
+import { renderChartOnDataChange } from "./chart.js";
 import { renderSummary } from "./details.js";
 import { renderSelectedStock } from "./selectedStock.js";
 
@@ -12,6 +13,7 @@ function handleStockClick(data) {
     stockValue: data.bookValue,
     profit: data.profit,
   });
+  renderChartOnDataChange();
   renderSummary();
 }
 
